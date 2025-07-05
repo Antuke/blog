@@ -10,4 +10,13 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    server: {
+        host: true,
+        strictPort: true,
+        cors: {
+          origin: ['https://9388-151-75-128-175.ngrok-free.app'],
+          credentials: true,
+        },
+      },
+    
 });
